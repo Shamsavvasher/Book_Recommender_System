@@ -11,25 +11,25 @@ from books_recommender.exception.exception_handler import AppException
 import base64
 
 
-def add_bg_from_local(image_file):
-    with open(image_file, "rb") as image:
-        encoded_string = base64.b64encode(image.read()).decode()
-    css = f"""
-    <style>
-    .stApp {{
-        background-image: url("data:image/jpg;base64,{encoded_string}");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }}
-    </style>
-    """
-    st.markdown(css, unsafe_allow_html=True)
+# def add_bg_from_local(image_file):
+#     with open(image_file, "rb") as image:
+#         encoded_string = base64.b64encode(image.read()).decode()
+#     css = f"""
+#     <style>
+#     .stApp {{
+#         background-image: url("data:image/jpg;base64,{encoded_string}");
+#         background-size: cover;
+#         background-position: center;
+#         background-repeat: no-repeat;
+#         background-attachment: fixed;
+#     }}
+#     </style>
+#     """
+# st.markdown(css, unsafe_allow_html=True)
 
 
-add_bg_from_local(
-    r"./background.jpg")
+# add_bg_from_local(
+#     r"./background.jpg")
 
 
 class Recommendation:
@@ -177,8 +177,8 @@ if __name__ == "__main__":
         st.markdown(css, unsafe_allow_html=True)
 
     # Apply background
-    add_bg_from_local(
-        r"./background.jpg")
+    # add_bg_from_local(
+    #     r"./background.jpg")
 
     # Title and Subtitle
     st.markdown("<div class='title'> Book Recommender System</div>",
