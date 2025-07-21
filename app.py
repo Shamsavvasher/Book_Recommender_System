@@ -178,7 +178,7 @@ if __name__ == "__main__":
 
     # Apply background
     add_bg_from_local(
-        r"E:\Downloads\End-to-End-Book-Recommender-System-main\End-to-End-Book-Recommender-System-main\background.jpg")
+        r"./background.jpg")
 
     # Title and Subtitle
     st.markdown("<div class='title'> Book Recommender System</div>",
