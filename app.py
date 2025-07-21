@@ -29,7 +29,7 @@ def add_bg_from_local(image_file):
 
 
 add_bg_from_local(
-    r"E:\Downloads\End-to-End-Book-Recommender-System-main\End-to-End-Book-Recommender-System-main\background.jpg")
+    r"./background.jpg")
 
 
 class Recommendation:
